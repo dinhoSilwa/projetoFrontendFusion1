@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mulish', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body *{
+    font-family: 'mulish', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #c4c4c4b6;
+}
+
+/* Header menu */
+
+.header{
+    display: flex;
+    width: 100vw;
+    padding: 2.2rem 5rem 0;
+    justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+}
+
+.header__menuPrincipal{
+    display: flex;
+    width: 60rem;
+    justify-content: left;    
+    
+}
+
+.header__menuPrincipal-lista{
+    list-style: none;
+    display: flex;
+    gap: 8.0rem;
+    
+}
+
+.header__menuPrincipal-item:hover{
+    transform: scale(1.15);
+}
+.header__menuPrincipal-lista li{
+    display: flex;
+    align-items: center;
+}
+
+.header__menuPrincipal-item{
+    transition: transform .3s;
+    color: #767676;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.2rem;
+    
+}
+#Github{
+    display: flex;
+    color: #FFF;
+    background-color: #0A1045;
+    width: 16rem;
+    height: 5rem;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    gap: 2rem;
+}
+
+/* section style */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6.4rem;
+    height: 65rem;
+    align-items: center;
+    margin: auto 0;
+}
+
+#hero__mosaico{
+    display: flex;
+    height: 50rem;
+    gap: 1.4rem;
+    
+}
+
+.colunahero01{
+    display: flex;
+    align-items: center;
+}
+
+
+.colunahero02{
+    display: flex;
+    align-items: center;
+   margin: 0 0 7rem;
+}
+
+.colunahero03{
+    display: flex;
+    align-items: center;
+    margin: 5rem 0 0;
+}
+
+.colunahero04{
+    display: flex;
+    align-items: center;
+}
+
+.hero__mosaico-imgs{
+    display: flex;
+    width: 18rem;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.hero__mosaico-img{
+   width: 100%;
+   height: 19.5rem;
+   border-radius: 3rem;
+   object-fit: cover;
+
+}
+
+
+.hero__rightarea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.hero__descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    h3{
+        color: #767676;
+        font-weight: 200;
+        font-size: 1.8rem;
+        margin: 0 0 .8rem;
+    }
+
+    h1{
+       text-align: right;
+       font-size: 6.4rem;
+       font-weight: bold;
+       background: #093896;
+       background: linear-gradient(to right, #093896 0%, #AD0000 100%);
+       background-clip: text;
+       -webkit-text-fill-color: transparent;
+        
+    }
+    h4{
+        margin: .8rem 0 0;
+        color: rgba(118, 118, 118, 0.80);
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+
+.hero__flags{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.hero__flag-tecnologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #303030;
+    font-weight: bold;
+    cursor: default;
+
+    
+    img{
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+    }
+
+}
+
+.html:hover{
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+    box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+    background-color: rgba(255, 112, 112, 0.397);
+    transform: scale(1.08);
+}
+
+.css:hover{
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+    box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+    background-color: rgba(22, 197, 133, 0.363);
+    transform: scale(1.08);
+}
+
+.javascript:hover{
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    -moz-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    background-color: rgba(255, 215, 115, 0.384);
+    transform: scale(1.08);
+}
+
+
+
+.hero__flags-lista{
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    text-align: center;
+    gap: 3rem;
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+        border-radius: 50%;
+        width: 6rem;
+        transition: .4s;
+    }
+
+}
+
+
+/* Selected images Mosaico */
+
+
+.selected{
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    -moz-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+    transform: scale(1.15);
+}
+
+
+.noselected{
+    transform: scale(.8);
+    filter: grayscale(1);
+}
