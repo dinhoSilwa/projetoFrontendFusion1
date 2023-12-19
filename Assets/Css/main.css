@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "mulish", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body * {
+  font-family: "mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(196, 196, 196, 0.7137254902);
+}/*# sourceMappingURL=main.css.map */
