@@ -20,3 +20,59 @@ body{
     flex-direction: column;
     background-color: #c4c4c4b6;
 }
+
+/* Header menu */
+
+.header{
+    display: flex;
+    width: 100vw;
+    padding: 2.2rem 5rem 0;
+    justify-content: space-between;
+}
+
+.header__logo{
+    display: flex;
+}
+
+.header__menuPrincipal{
+    display: flex;
+    width: 60rem;
+    justify-content: left;    
+    
+}
+
+.header__menuPrincipal-lista{
+    list-style: none;
+    display: flex;
+    gap: 8.0rem;
+    
+}
+
+.header__menuPrincipal-item:hover{
+    transform: scale(1.1);
+}
+.header__menuPrincipal-lista li{
+    display: flex;
+    align-items: center;
+}
+
+.header__menuPrincipal-item{
+    transition: transform .3s;
+    color: #767676;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.2rem;
+    
+}
+#Github{
+    display: flex;
+    color: #FFF;
+    background-color: #0A1045;
+    width: 16rem;
+    height: 5rem;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    gap: 2rem;
+}
