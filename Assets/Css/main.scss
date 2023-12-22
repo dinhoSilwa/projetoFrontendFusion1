@@ -18,7 +18,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #c4c4c4b6;
+    background-color: #ebebeb;
 }
 
 /* Header menu */
@@ -54,6 +54,7 @@ body{
 .header__menuPrincipal-lista li{
     display: flex;
     align-items: center;
+
 }
 
 .header__menuPrincipal-item{
