@@ -1,0 +1,74 @@
+
+
+.hero__flags{
+ display: flex;
+ width: 100%;
+ justify-content: end;
+ align-items: end;
+
+}
+
+.hero__flag-tecnologia{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-size: 1rem;
+ color: #303030;
+ font-weight: bold;
+ cursor: default;
+
+ 
+ img{
+     width: 4rem;
+     height: 4rem;
+     object-fit: cover;
+ }
+
+}
+
+
+.html:hover{
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+ -moz-box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+ box-shadow: 0px 0px 30px 0px rgba(255,112,112,1);
+ background-color: rgba(255, 112, 112, 0.397);
+ transform: scale(1.08);
+}
+
+.css:hover{
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+ -moz-box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+ box-shadow: 0px 0px 30px 0px rgba(22,197,134,1);
+ background-color: rgba(22, 197, 133, 0.363);
+ transform: scale(1.08);
+}
+
+.javascript:hover{
+ -webkit-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+ -moz-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+ box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+ background-color: rgba(255, 215, 115, 0.384);
+ transform: scale(1.08);
+}
+
+
+
+.hero__flags-lista{
+ list-style: none;
+ position: absolute;
+ bottom: 0;
+ display: flex;
+ align-items: end;
+ text-align: center;
+ gap: 3rem;
+ li{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 6rem;
+     border-radius: 50%;
+     width: 6rem;
+     transition: .4s;
+ }
+
+}

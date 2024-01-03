@@ -3,14 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "mulish", sans-serif;
-}
-
-:root {
   font-size: 62.5%;
-}
-
-body * {
-  font-family: "mulish", sans-serif;
 }
 
 body {
@@ -124,7 +117,8 @@ body {
   width: 100%;
   height: 19.5rem;
   border-radius: 3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s;
 }
 
@@ -153,7 +147,8 @@ body {
   font-weight: bold;
   background: #093896;
   background: linear-gradient(to right, #093896 0%, #AD0000 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hero__descricao h4 {
@@ -161,81 +156,6 @@ body {
   color: rgba(118, 118, 118, 0.8);
   font-size: 1.8rem;
   font-weight: bold;
-}
-
-.hero__flags {
-  display: flex;
-  width: 100%;
-  justify-content: end;
-  align-items: end;
-}
-
-.hero__flag-tecnologia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1rem;
-  color: #303030;
-  font-weight: bold;
-  cursor: default;
-}
-.hero__flag-tecnologia img {
-  width: 4rem;
-  height: 4rem;
-  object-fit: cover;
-}
-
-.html:hover {
-  -webkit-box-shadow: 0px 0px 30px 0px rgb(255, 112, 112);
-  -moz-box-shadow: 0px 0px 30px 0px rgb(255, 112, 112);
-  box-shadow: 0px 0px 30px 0px rgb(255, 112, 112);
-  background-color: rgba(255, 112, 112, 0.397);
-  transform: scale(1.08);
-}
-
-.css:hover {
-  -webkit-box-shadow: 0px 0px 30px 0px rgb(22, 197, 134);
-  -moz-box-shadow: 0px 0px 30px 0px rgb(22, 197, 134);
-  box-shadow: 0px 0px 30px 0px rgb(22, 197, 134);
-  background-color: rgba(22, 197, 133, 0.363);
-  transform: scale(1.08);
-}
-
-.javascript:hover {
-  -webkit-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
-  -moz-box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
-  box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
-  background-color: rgba(255, 215, 115, 0.384);
-  transform: scale(1.08);
-}
-
-.hero__flags-lista {
-  list-style: none;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  align-items: end;
-  text-align: center;
-  gap: 3rem;
-}
-.hero__flags-lista li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
-  border-radius: 50%;
-  width: 6rem;
-  transition: 0.4s;
-}
-
-/* Selected images Mosaico */
-.selected {
-  transform: scale(1.16);
-}
-
-.noselected {
-  transform: scale(0.9);
-  filter: grayscale(1);
 }
 
 .aboutus {
@@ -300,35 +220,40 @@ article:not(:nth-child(1)) {
 .aboutus header .imagem-1 {
   width: 82px;
   height: 52px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url("../Images/icone04.svg");
   background-repeat: no-repeat;
 }
 .aboutus header .imagem-2 {
   width: 82px;
   height: 52px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url("../Images/icone01.svg");
   background-repeat: no-repeat;
 }
 .aboutus header .imagem-3 {
   width: 82px;
   height: 52px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url("../Images/icone03.svg");
   background-repeat: no-repeat;
 }
 .aboutus header .imagem-4 {
   width: 82px;
   height: 52px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url("../Images/icone02.svg");
   background-repeat: no-repeat;
 }
 .aboutus header .imagem-5 {
   width: 82px;
   height: 52px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-image: url("../Images/icone05.svg");
   background-repeat: no-repeat;
 }
@@ -352,4 +277,72 @@ article:not(:nth-child(1)) {
   line-height: 26px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.hero__flags {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: end;
+}
+
+.hero__flag-tecnologia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: #303030;
+  font-weight: bold;
+  cursor: default;
+}
+.hero__flag-tecnologia img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.html:hover {
+  box-shadow: 0px 0px 30px 0px rgb(255, 112, 112);
+  background-color: rgba(255, 112, 112, 0.397);
+  transform: scale(1.08);
+}
+
+.css:hover {
+  box-shadow: 0px 0px 30px 0px rgb(22, 197, 134);
+  background-color: rgba(22, 197, 133, 0.363);
+  transform: scale(1.08);
+}
+
+.javascript:hover {
+  box-shadow: 0px 0px 30px 0px rgb(255, 215, 115);
+  background-color: rgba(255, 215, 115, 0.384);
+  transform: scale(1.08);
+}
+
+.hero__flags-lista {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: end;
+  text-align: center;
+  gap: 3rem;
+}
+.hero__flags-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  border-radius: 50%;
+  width: 6rem;
+  transition: 0.4s;
+}
+
+/* Selected images Mosaico */
+.selected {
+  transform: scale(1.16);
+}
+
+.noselected {
+  transform: scale(0.9);
+  filter: grayscale(1);
+}/*# sourceMappingURL=main.css.map */
