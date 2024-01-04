@@ -1,0 +1,59 @@
+@import "../../../variables/variables";
+
+.hero__rightarea{
+
+ width: 100vw;
+ height: 25vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ margin-top: $space-32;
+ padding-left: $space-16;
+ 
+     .hero__descricao{
+      
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+   
+   
+       .title-1{
+        
+         font-size: 3.2rem;
+         font-family: 'Mulish', sans-serif;
+         font-weight: 800;
+         color: $primaryBlue;
+         font-size: $titleSize;
+        
+
+       
+       }
+
+       .title-2{
+        
+         font-size: 3.2rem;
+         font-family: 'Mulish', sans-serif;
+         font-weight: $primaryTitleWeight;
+         color: $javascriptThemer;
+         font-size: $titleSize;
+         margin-top: -1rem;
+         
+       
+       
+   
+
+       
+       }
+       .sub-title{
+         font-size:$subtitleSize;
+         font-weight: $primarySubTitleWeight;
+         color: $fontDarkThemeLight;
+        
+
+
+
+     
+       }
+     }
+}
