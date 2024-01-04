@@ -1,0 +1,14 @@
+
+/* Selected images Mosaico */
+
+
+.selected{
+    
+ transform: scale(1.16);
+}
+
+
+.noselected{
+ transform: scale(.9);
+ filter: grayscale(1);
+}
