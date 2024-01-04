@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/Css/main.css">
     <script src="./Assets/Js/main.js" defer></script>
@@ -15,16 +16,26 @@
     <header class="header">
 
         <figure class="header__logo">
-            <img src="./Assets/Images/Logo.svg" alt="Logo do projeto" class="header__logo-img">
+            <img src="./assets/images/logomobile/logomobile.png" alt="Logo do projeto" class="header__logo-img">
+            <i class="ti ti-menu-2"></i>
         </figure>
 
         <nav class="header__menuPrincipal">
+            <i class="ti ti-menu-2"></i>
+          
             <ul class="header__menuPrincipal-lista">
-                <li><a href="#" class="header__menuPrincipal-item">Equipe</a></li>
-                <li><a href="#" class="header__menuPrincipal-item">Sobre</a></li>
-                <li><a href="#" class="header__menuPrincipal-item">Projeto</a></li>
-                <li><a id="Github" target="_blank" href="https://github.com/dinhoSilwa/projetoFrontendFusion1" class="header__menuPrincipal-item"><img src="./Assets/Images/IconGithub.svg" alt="GitHub Icon">Github</a></li>
+            
+               
+
+                    <li><a href="#" class="header__menuPrincipal-item">Equipe</a></li>
+                    <li><a href="#" class="header__menuPrincipal-item">Sobre</a></li>
+                    <li><a href="#" class="header__menuPrincipal-item">Projeto</a></li>
+                    <li><a id="Github" target="_blank" href="https://github.com/dinhoSilwa/projetoFrontendFusion1" class="header__menuPrincipal-item"><img src="./Assets/Images/IconGithub.svg" alt="GitHub Icon">Github</a></li>
+                
+          
+            
             </ul>
+    
         </nav>
 
     </header>
@@ -34,20 +45,21 @@
         <div id="hero__mosaico">
 
             <div class="hero__mosaico-coluna colunahero01">
-                <figure class="hero__mosaico-imgs">
+                <figure class="hero__mosaico-imgs j-start">
+                    <img src="./Assets/Images/Nico.jpeg" alt="nico" class="hero__mosaico-img">
                     <img src="./Assets/Images/davi.svg" alt="davi" class="hero__mosaico-img">
                 </figure>
             </div>
 
             <div class="hero__mosaico-coluna colunahero02">
-                <figure class="hero__mosaico-imgs">
+                <figure class="hero__mosaico-imgs j-middle">
                     <img src="./Assets/Images/Mércia.jpeg" alt="mércia" class="hero__mosaico-img">
                     <img src="./Assets/Images/Dinho.svg" alt="dinho" class="hero__mosaico-img">
                 </figure>
             </div>
 
             <div class="hero__mosaico-coluna colunahero03">
-                <figure class="hero__mosaico-imgs">
+                <figure class="hero__mosaico-imgs j-end">
                     <img src="./Assets/Images/Ricardo.jpeg" alt="ricardo" class="hero__mosaico-img">
                     <img src="./Assets/Images/Dinho.svg" alt="dinho" class="hero__mosaico-img">
                 </figure>
@@ -65,10 +77,10 @@
         <div class="hero__rightarea">
 
             <div class="hero__descricao">
-                <h3>Projeto</h3>
-                <h1>Front-end</h1>
-                <h1>Fusion</h1>
-                <h4>Codifique o seu futuro Hoje!</h4>
+                <p class="sub-title">Projeto</p>
+                <p class="title-1">Frontend <p class="title-2">Fusion</p>               
+                <p class="sub-title">Codifique o seu futuro Hoje!</p>
+
             </div>
 
             <div class="hero__flags">
@@ -85,7 +97,7 @@
 
 
 
-    <section class="aboutus">
+    <section class="aboutus" style="display: none;">
 
        <article class="aboutus-box1-titulo">
         <h2 class="aboutus-primary-title">Sobre o Projeto</h2>

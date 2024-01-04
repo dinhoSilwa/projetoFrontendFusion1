@@ -43,3 +43,28 @@ imagem.forEach((imageSelected) => {
 
 });
 
+
+const menuIcons = document.querySelectorAll(".ti");
+const lateralMenu = document.querySelector(".header__menuPrincipal-lista");
+
+menuIcons.forEach((icon) => {
+    icon.addEventListener("click", (e) => {
+        const clickedIcon = e.target;
+        const iconClass = clickedIcon.classList;
+
+         if (iconClass.contains("ti-x")) {
+            lateralMenu.classList.toggle("closeMenu");
+            clickedIcon.classList.remove("ti-x");
+            clickedIcon.classList.add("ti-menu-2");
+            console.log(`o menu está fechado: ${clickedIcon.classList}`);
+        }
+        else if (iconClass.contains("ti-menu-2")) {
+            lateralMenu.classList.toggle("openMenu");
+            clickedIcon.classList.remove("ti-menu-2");
+            clickedIcon.classList.add("ti-x");
+            console.log(`o menu está aberto: ${clickedIcon.classList}`);
+        } 
+    });
+});
+
+

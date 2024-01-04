@@ -6,3 +6,11 @@
 @import "./components/sectionabout/about";
 @import "./components/flags/flags";
 @import "./components/classListAdd/classlist";
+
+
+// components responsivos
+
+@import "./responsive/globalResponsive";
+
+// fontes de texto:
+@import "./autoload/externalFonts/mulish";
