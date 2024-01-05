@@ -1,0 +1,34 @@
+// sizes config
+
+$space-8: 0.8rem;
+$space-16: $space-8 * 2; 
+$space-32: $space-16 * 2;
+$space-64: $space-32 * 2;
+
+// Topoghaphy config
+$primaryfont:'Mulish', sans-serif;
+$primaryTitleWeight: 800;
+$primarySubTitleWeight:600;
+$titleSize:3.2rem;
+$subtitleSize:1.6rem;
+
+$fontDarkTheme:#000;
+$fontDarkThemeLight:#434343;
+
+
+// palette colors config
+
+$primaryBlue:#0A1045;
+$secondBlue:#00C2D1;
+$htmlThemer:#FFC42E;
+$cssThemer:#16C586;
+$javascriptThemer:#F95A00;
+
+
+@mixin alingAllcenter($direction){
+ display: flex;
+ flex-direction: $direction;
+ justify-content: center;
+ align-items: center;
+
+}
