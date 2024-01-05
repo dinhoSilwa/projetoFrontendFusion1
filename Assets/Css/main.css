@@ -178,6 +178,7 @@ body {
 article:not(:nth-child(1)) {
   width: 389px;
   height: 296px;
+  transition: 0.3s;
   margin: 0 auto;
   border-radius: 16px;
   background: #f7f7f7;
@@ -276,6 +277,11 @@ article:not(:nth-child(1)) {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.boxAbout {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.65);
 }
 
 .hero__flags {
