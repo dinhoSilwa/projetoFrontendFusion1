@@ -1,0 +1,96 @@
+@import "../../../variables/variables";
+
+@media only screen and (max-width: 480px) {
+
+ .hero__rightarea{
+
+  width: 100vw; 
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin-top: 1.6rem;
+  
+
+  
+  .hero__descricao{
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding-left: 1.6rem;
+ 
+   margin-bottom: 6.4rem;
+
+
+   
+  .title-1, .title-2{
+  
+   font-size: $titleSize;
+   font-weight: $primaryTitleWeight;
+   color: $primaryBlue;
+   
+   
+  }
+
+  .title-2{
+   color: $javascriptTheme;
+   margin-top: - 1.4rem;
+  }
+
+  .sub-title{
+   font-size: $subtitleSize;
+   
+  
+  }
+   
+  }
+
+  .hero__flags{
+
+ 
+
+
+   
+  
+
+   .hero__flags-lista{
+    width: 100%;
+
+    .html{
+     color:$htmlTheme;
+    }
+    .css{
+     color:$cssTheme;
+    }
+    .javascript{
+     color:$javascriptTheme;
+    }
+  
+    i{
+     font-size: 2.8rem;
+    }
+
+    .ti-brand-html5{
+     color:$htmlTheme;
+    }
+    .ti-brand-css3{
+     color:$cssTheme;
+    }
+
+    .ti-brand-javascript{
+     color:$javascriptTheme;
+    }
+
+
+
+   }
+  }
+
+  
+
+ }
+}

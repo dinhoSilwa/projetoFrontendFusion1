@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./Assets/Css/main.css">
     <script src="./Assets/Js/main.js" defer></script>
     <title>Projeto front end fusion</title>
@@ -16,13 +17,14 @@
     <header class="header">
 
         <figure class="header__logo">
-            <img src="./assets/images/logomobile/logomobile.png" alt="Logo do projeto" class="header__logo-img">
-            <i class="ti ti-menu-2"></i>
-        </figure>
+        <img src="./assets/Images/logomobile/desktopLogo.png" alt="Logo do projeto" class="header__logo-img">
 
+        </figure>
+        
+        <label for="btn-menu-change"><i class="ti ti-menu-2"></i></label>
+        <input type="checkbox" id="btn-menu-change">
         <nav class="header__menuPrincipal">
-            <i class="ti ti-menu-2"></i>
-          
+         
             <ul class="header__menuPrincipal-lista">
             
                
@@ -45,21 +47,21 @@
         <div id="hero__mosaico">
 
             <div class="hero__mosaico-coluna colunahero01">
-                <figure class="hero__mosaico-imgs j-start">
+                <figure class="hero__mosaico-imgs figure-top">
                     <img src="./Assets/Images/Nico.jpeg" alt="nico" class="hero__mosaico-img">
                     <img src="./Assets/Images/davi.svg" alt="davi" class="hero__mosaico-img">
                 </figure>
             </div>
 
             <div class="hero__mosaico-coluna colunahero02">
-                <figure class="hero__mosaico-imgs j-middle">
+                <figure class="hero__mosaico-imgs figure-center">
                     <img src="./Assets/Images/Mércia.jpeg" alt="mércia" class="hero__mosaico-img">
                     <img src="./Assets/Images/Dinho.svg" alt="dinho" class="hero__mosaico-img">
                 </figure>
             </div>
 
             <div class="hero__mosaico-coluna colunahero03">
-                <figure class="hero__mosaico-imgs j-end">
+                <figure class="hero__mosaico-imgs figure-bottom">
                     <img src="./Assets/Images/Ricardo.jpeg" alt="ricardo" class="hero__mosaico-img">
                     <img src="./Assets/Images/Dinho.svg" alt="dinho" class="hero__mosaico-img">
                 </figure>
@@ -85,11 +87,12 @@
 
             <div class="hero__flags">
                 <ul class="hero__flags-lista">
-                    <li class="html"><span class="hero__flag-tecnologia"><img src="./Assets/Images/html.svg" alt="imagem Html"> HTML</span></li>
-                    <li class="css"><span class="hero__flag-tecnologia"><img src="./Assets/Images/css.svg" alt="Imagem Css"> CSS</span></li>
-                    <li class="javascript"><span class="hero__flag-tecnologia"><img src="./Assets/Images/js.svg" alt="Imagem Javascript"> JavaScript</span></li>
+                    <li class="html"><span class="hero__flag-tecnologia">   <i class="ti ti-brand-html5" alt="imagem Html"></i>HTML</span></li>
+                    <li class="css"><span class="hero__flag-tecnologia"><i class="ti ti-brand-css3"alt="Imagem Css"></i>CSS</span></li>
+                    <li class="javascript"><span class="hero__flag-tecnologia"> <i class="ti ti-brand-javascript"></i>JavaScript</span></li>
                 </ul>
             </div>
+            
 
         </div>
 
@@ -97,13 +100,13 @@
 
 
 
-    <section class="aboutus">
-        
-       <section class="aboutus-box1-titulo">
+    <section class="aboutus" style="display: none;">
+
+       <article class="aboutus-box1-titulo">
         <h2 class="aboutus-primary-title">Sobre o Projeto</h2>
         <p class="aboutus-paragrafo">Participar de um projeto em grupo para aprender programação web frontend e desenvolver um
             portfólio colaborativo oferece uma série de vantagens!</p>
-       </section>  
+       </article>
 
        <article class="aboutus-box2">
        <header> <div class="imagem imagem-1"></div> <h4 class="aboutus-title">Aprendizado colaborativo:</h4></header>
