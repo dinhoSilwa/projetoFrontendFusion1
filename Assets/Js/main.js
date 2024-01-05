@@ -68,3 +68,19 @@ menuIcons.forEach((icon) => {
 });
 
 
+function showBoxShadow(){
+    const imagemContainer = document.querySelectorAll(".aboutus article");
+
+    imagemContainer.forEach((boxSelected)=> {
+
+        boxSelected.addEventListener("mouseenter", ()=>{
+            boxSelected.classList.toggle("boxAbout");
+        });
+
+        boxSelected.addEventListener("mouseleave", ()=>{
+            boxSelected.classList.toggle("boxAbout");
+        });
+    });
+};
+
+showBoxShadow();
