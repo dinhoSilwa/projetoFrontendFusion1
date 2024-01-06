@@ -4,10 +4,11 @@ $space-8: 0.8rem;
 $space-16: $space-8 * 2; 
 $space-32: $space-16 * 2;
 $space-64: $space-32 * 2;
+$space-96: 9.6rem;
 
 // Topoghaphy config
 $primaryfont:'Mulish', sans-serif;
-$primaryTitleWeight: 800;
+$primaryTitleWeight: 900;
 $primarySubTitleWeight:600;
 $titleSize:3.2rem;
 $subtitleSize:1.6rem;
@@ -33,4 +34,23 @@ $javascriptTheme:#F95A00;
 
 
 }
+
+// tamanho da imagem do mosaico
+
+@mixin hero__mosaico-img{
+ width: 18.3rem ;
+ height: 20rem ;
+ box-shadow: -2px 2px 10px #898888;
+
+}
+
+@mixin hero__mosaico-column($columnAling){
+ display: flex;
+ flex-direction: column;
+ justify-content:$columnAling;
+gap: 1.6rem;
+
+}
+
+
 

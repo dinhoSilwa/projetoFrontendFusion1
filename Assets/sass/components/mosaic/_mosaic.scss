@@ -1,40 +1,77 @@
+@media only screen and (min-width: 1025px) {
+ /* Estilos para telas maiores que 1025px de largura */
 
-.colunahero01{
+ @import "../../variables/variables";
+
+/* section style */
+
+.hero{
  display: flex;
+ justify-content: space-between;
+ width: calc(100vw - $space-64);
  align-items: center;
+ margin: 0 auto;
+
+
 }
 
-
-.colunahero02{
+#hero__mosaico{
  display: flex;
- align-items: center;
-margin: 0 0 7rem;
-}
+ height: 50rem;
+ gap: 1.4rem;
 
-.colunahero03{
- display: flex;
- align-items: center;
- margin: 5rem 0 0;
  
 }
 
-.colunahero04{
- display: flex;
- align-items: center;
+.hero__mosaico-coluna {
+figure{
+
+ height: 100%;
 }
+
+.figure-top{
+
+ @include hero__mosaico-column(center);
+
+}
+
+.figure-center{
+ @include hero__mosaico-column(flex-start);
+}
+
+.figure-bottom{
+ @include hero__mosaico-column(flex-end);
+}
+
+.figure-bottom-desktop{
+ @include hero__mosaico-column(center);
+
+
+}
+
+
+
+}
+
 
 .hero__mosaico-imgs{
  display: flex;
- width: 18rem;
  flex-direction: column;
- gap: 2.3rem;
+
+ 
+ 
 }
 
 .hero__mosaico-img{
-width: 100%;
-height: 19.5rem;
+@include hero__mosaico-img;
 border-radius: 3rem;
 object-fit: cover;
-transition: all .4s;
+transition: all .3s;
+
+
+}
+
+
+
 
 }

@@ -1,21 +1,54 @@
+@media only screen and (min-width: 1025px) {
+ /* Estilos para telas maiores que 1025px de largura */
 
+ @import "../../variables/variables";
+ 
 /* Header menu */
+
+body{
+ background-color: #fff;
+}
 
 .header{
  display: flex;
  width: 100vw;
- padding: 2.2rem 5rem 0;
+ height: $space-96;
  justify-content: space-between;
+ align-items: center;
+ box-shadow: 2px 2px 10px #36363617;
+ margin-bottom: $space-32;
+
+
+ // hidden de "check" input of the mobile menu
+ #btn-menu-change{
+  display: none;
+ }
+
+ 
+ 
+ 
 }
 
 .header__logo{
  display: flex;
+ height: auto;
+ margin-left: $space-16;
+ height: 5.6rem;
+
+ img{
+  width: 100%;
+  height: auto;
+ 
+ }
 }
 
 .header__menuPrincipal{
  display: flex;
  width: 60rem;
+ height: 6.4rem;
  justify-content: left;    
+
+
  
 }
 
@@ -23,6 +56,7 @@
  list-style: none;
  display: flex;
  gap: 8.0rem;
+
  
 }
 
@@ -40,38 +74,20 @@
  color: #767676;
  text-decoration: none;
  font-weight: bold;
- font-size: 2.2rem;
+ font-size: $subtitleSize;
  
 }
 #Github{
  display: flex;
  color: #FFF;
  background-color: #0A1045;
- width: 16rem;
+ width: 12rem;
  height: 5rem;
  
  justify-content: center;
  align-items: center;
  border-radius: 3rem;
- gap: 2rem;
+ gap: 1rem;
 }
 
-/* section style */
-
-.hero{
- display: flex;
- justify-content: space-between;
- width: 100%;
- padding: 0 6.4rem;
- height: 65rem;
- align-items: center;
- margin: auto 0;
-
-}
-
-#hero__mosaico{
- display: flex;
- height: 50rem;
- gap: 1.4rem;
- 
 }

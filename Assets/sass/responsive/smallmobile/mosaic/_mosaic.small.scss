@@ -46,6 +46,9 @@
 
     .figure-top{
       justify-content: flex-start;
+      img:first-child{
+        display: flex !important;
+      }
     }
     .figure-center{
       justify-content: center;

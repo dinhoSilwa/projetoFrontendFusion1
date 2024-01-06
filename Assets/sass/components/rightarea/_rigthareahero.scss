@@ -1,39 +1,81 @@
-
+@media only screen and (min-width: 1025px) {
 
 .hero__rightarea{
  display: flex;
  flex-direction: column;
- height: 100%;
+ height: 50vh;
  justify-content: center;
  position: relative;
+
+
 }
 
 .hero__descricao{
  display: flex;
  flex-direction: column;
  align-items: end;
+margin-bottom: $space-32;
 
- h3{
-     color: #767676;
-     font-weight: 200;
-     font-size: 1.8rem;
-     margin: 0 0 .8rem;
+ .title-1{
+   font-size: $titleSize * 2;
+   color: $primaryBlue;
+   font-weight: $primaryTitleWeight;
+ }
+ .title-2{
+    font-size: $titleSize * 2;
+    color: $javascriptTheme;
+    font-weight: $primaryTitleWeight;
  }
 
- h1{
-    text-align: right;
-    font-size: 6.4rem;
-    font-weight: bold;
-    background: #0A1045;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.sub-title{
+    font-size: $subtitleSize * 1.6;
 
-     
- }
- h4{
-     margin: .8rem 0 0;
-     color: rgba(118, 118, 118, 0.80);
-     font-size: 1.8rem;
-     font-weight: bold;
- }
+}
+
+
+
+
+}
+.hero__flags{
+    position: relative;
+    top: 12.8rem;
+
+    
+
+   .hero__flags-lista{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+
+    .html{
+     color:$htmlTheme;
+    }
+    .css{
+     color:$cssTheme;
+    }
+    .javascript{
+     color:$javascriptTheme;
+    }
+  
+    i{
+     font-size: 4rem;
+    }
+
+    .ti-brand-html5{
+     color:$htmlTheme;
+    }
+    .ti-brand-css3{
+     color:$cssTheme;
+    }
+
+    .ti-brand-javascript{
+     color:$javascriptTheme;
+    }
+
+
+}
+}
+
 }
