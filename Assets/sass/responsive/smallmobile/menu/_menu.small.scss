@@ -12,6 +12,7 @@
 .header{
 
  width: 100vw; height: 6.4rem;
+ border: 2px solid red;
  
  display: flex;
  justify-content: space-between;
@@ -25,6 +26,7 @@ figure{
    width: 5.2rem * 1.5;
    height: 3.2rem * 1.5;
    margin-left:1.6rem;
+   display: none;
   
       
    
