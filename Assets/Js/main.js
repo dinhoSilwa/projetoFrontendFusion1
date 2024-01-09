@@ -67,4 +67,20 @@ menuIcons.forEach((icon) => {
     });
 });
 
+function scrollToSection(event) {
+    event.preventDefault();//Isso impede o comportamento padrão do link, que seria a navegação direta para a seção referenciada pelo href.
 
+    const getValorAtributoId = event.currentTarget.getAttribute('href');// Obtém o valor do atributo href (por exemplo, "#section2")
+    const targetSessaoPorId = document.querySelector(getValorAtributoId);// Seleciona a seção correspondente com base no ID
+
+    targetSessaoPorId.scrollIntoView({//Isso utiliza o método scrollIntoView para rolar suavemente até a seção selecionada.
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+
+  const menuLinks = document.querySelectorAll('.header__menuPrincipal a[href^="#"]');//seleciona aqueles links que têm apenas o atributo href que iniciem com "#" (porque poderiam haver outros links dentro desta classe).
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', scrollToSection);
+  });
