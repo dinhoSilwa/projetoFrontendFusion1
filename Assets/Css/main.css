@@ -406,11 +406,13 @@ article:not(:nth-child(1)) {
 .about-technologies .logos .logos__1 .css-technologies {
   color: rgb(22, 197, 134);
 }
+.about-technologies .logos .logos__1 .sass-technologies {
+  color: rgb(138, 1, 108);
+}
 .about-technologies .logos .logos__1 .javascript-technologies {
   color: rgb(255, 215, 115);
 }
 .about-technologies .logos .logos__1 li {
-  color: rgba(226, 0, 251, 0.2941176471);
   background: linear-gradient(150deg, #fff 35.63%, #cbc4c4 121.18%);
   box-shadow: inset -1rem -1rem 4rem 0 rgba(0, 0, 0, 0.2);
   width: 25rem;
