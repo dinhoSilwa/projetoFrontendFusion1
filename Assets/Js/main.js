@@ -67,3 +67,36 @@ function showBoxShadow() {
 }
 
 showBoxShadow();
+
+/* funcao da tecnologia */
+
+const logoTecnologia = document.querySelectorAll(".logos__1 li");
+logoTecnologia.forEach((itemSelecionado)=>{
+  function itemSelect(){
+    itemSelecionado.classList.toggle("selected"); 
+    
+
+
+    
+  }
+  itemSelecionado.addEventListener("mouseenter", itemSelect);
+  itemSelecionado.addEventListener("mouseleave", itemSelect);
+
+
+  logoTecnologia.forEach((naoSelecionado)=>{
+    if(naoSelecionado !== itemSelecionado){
+      function itemNoSelect(){
+        naoSelecionado.classList.toggle("noselected");
+
+        }
+      itemSelecionado.addEventListener("mouseenter", itemNoSelect);
+      itemSelecionado.addEventListener("mouseleave", itemNoSelect);
+      
+    
+    }
+
+  })
+  
+
+
+})

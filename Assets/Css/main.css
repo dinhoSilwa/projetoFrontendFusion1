@@ -406,6 +406,9 @@ article:not(:nth-child(1)) {
 .about-technologies .logos .logos__1 .css-technologies {
   color: rgb(22, 197, 134);
 }
+.about-technologies .logos .logos__1 .sass-technologies {
+  color: rgb(138, 1, 108);
+}
 .about-technologies .logos .logos__1 .javascript-technologies {
   color: rgb(255, 215, 115);
 }
@@ -421,6 +424,7 @@ article:not(:nth-child(1)) {
   flex-direction: column;
   align-items: center;
   font-weight: bold;
+  transition: 0.3s;
 }
 .about-technologies .logos .logos__1 li .sass {
   margin: 1.2rem 0 0;
