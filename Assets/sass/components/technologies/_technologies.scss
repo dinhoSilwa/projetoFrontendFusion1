@@ -50,12 +50,16 @@
         .css-technologies{
            color: rgb(22, 197, 134);
         }
-
+        .sass-technologies{
+          color: rgb(138, 1, 108);
+        }
         .javascript-technologies{
+
            color:  rgb(255, 215, 115);
         }
 
         li {
+        
         background: linear-gradient(150deg, #fff 35.63%, #cbc4c4 121.18%);
         box-shadow: inset -1rem -1rem 4rem 0 rgba(0, 0, 0, 0.20);
         width: 25rem;
@@ -67,6 +71,7 @@
         flex-direction: column;
         align-items: center;
         font-weight: bold;
+        transition: .3s;
         
 
 
